@@ -6,7 +6,8 @@ DEBIAN_FRONTEND=noninteractive
 wget url-of-pika-sources.deb -O pika-sources.deb
 apt install pika-sources.deb --yes --option Acquire::Retries=5 --option Acquire::http::Timeout=100 --option Dpkg::Options::="--force-confnew"
 # Clone Upstream
-mkdir -p ./debian ./src-pkg-name
+cp -rvf ./debian ./pika-gnome-keyboarding
+cd ./pika-gnome-keyboarding
 
 # Get build deps
 ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
