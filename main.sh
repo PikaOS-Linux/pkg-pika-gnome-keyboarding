@@ -3,8 +3,10 @@
 DEBIAN_FRONTEND=noninteractive
 
 # Add dependent repositories
-wget url-of-pika-sources.deb -O pika-sources.deb
-apt install pika-sources.deb --yes --option Acquire::Retries=5 --option Acquire::http::Timeout=100 --option Dpkg::Options::="--force-confnew"
+wget -q -O - https://ppa.pika-os.com/key.gpg | sudo apt-key add -
+add-apt-repository https://ppa.pika-os.com
+add-apt-repository ppa:pikaos/pika
+add-apt-repository ppa:kubuntu-ppa/backports
 # Clone Upstream
 cp -rvf ./debian ./pika-gnome-keyboarding
 cd ./pika-gnome-keyboarding
