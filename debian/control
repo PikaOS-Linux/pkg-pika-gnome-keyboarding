@@ -9,4 +9,4 @@ Rules-Requires-Root: no
 Package: pika-gnome-keyboarding
 Architecture: linux-any
 Depends: ${misc:Depends}, fcitx5
-Description: pkgdesc
+Description: fcitx5 configration for pika gnome.
