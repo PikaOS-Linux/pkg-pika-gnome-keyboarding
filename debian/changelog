@@ -1,3 +1,9 @@
+pika-gnome-keyboarding (1.1-99pika1.lunar) lunar; urgency=medium
+
+  * Smol .dekstop fix
+
+ -- Ward Nakchbandi <hotrod.master@hotmail.com>
+
 pika-gnome-keyboarding (1.0-99pika1.lunar) lunar; urgency=medium
 
   * Initial release.
